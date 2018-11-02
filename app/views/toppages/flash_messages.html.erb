@@ -1,0 +1,9 @@
+<% flash.each do |message_type, mesasge| %>
+ <div class="alert alert-warning">
+   <ul>
+     <% model.errors.full_message.each do |message| %>
+       <li><%= message %></li>
+     <% end %>
+   </ul>
+ </div>
+<% end %>
